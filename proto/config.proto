@@ -662,6 +662,11 @@ message KeyboardHostOptions
     optional int32 deprecatedPin5V = 4 [deprecated = true];
 }
 
+message ControllerHostOptions
+{
+    optional bool enabled = 1;
+}
+
 message FocusModeOptions
 {
     optional bool enabled = 1;
@@ -763,6 +768,7 @@ message AddonOptions
     optional AnalogADS1256Options analogADS1256Options = 23;
     optional RotaryOptions rotaryOptions = 24;
     optional PCF8575Options pcf8575Options = 25;
+    optional ControllerHostOptions controllerHostOptions = 25;
 }
 
 message MigrationHistory

@@ -45,6 +45,7 @@ import FocusMode, {
 	focusModeState,
 } from '../Addons/FocusMode';
 import Keyboard, { keyboardScheme, keyboardState } from '../Addons/Keyboard';
+import Controller, { controllerScheme, controllerState} from '../Addons/Controller';
 import InputHistory, {
 	inputHistoryScheme,
 	inputHistoryState,
@@ -72,6 +73,7 @@ const schema = yup.object().shape({
 	...inputHistoryScheme,
 	...rotaryScheme,
 	...pcf8575Scheme,
+	...controllerScheme,
 });
 
 const defaultValues = {
@@ -95,6 +97,7 @@ const defaultValues = {
 	...inputHistoryState,
 	...rotaryState,
 	...pcf8575State,
+	...controllerState,
 };
 
 const ADDONS = [
@@ -115,6 +118,7 @@ const ADDONS = [
 	SNES,
 	FocusMode,
 	Keyboard,
+	Controller,
 	InputHistory,
 	Rotary,
 	PCF8575,
