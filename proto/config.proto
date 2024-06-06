@@ -768,7 +768,7 @@ message AddonOptions
     optional AnalogADS1256Options analogADS1256Options = 23;
     optional RotaryOptions rotaryOptions = 24;
     optional PCF8575Options pcf8575Options = 25;
-    optional ControllerHostOptions controllerHostOptions = 25;
+    optional ControllerHostOptions controllerHostOptions = 26;
 }
 
 message MigrationHistory
